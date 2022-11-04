@@ -1,0 +1,1740 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../NeueMontreal/NeueMontreal-Regular.woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../NeueMontreal/NeueMontreal-Medium.woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../NeueMontreal/NeueMontreal-Bold.woff');
+    font-weight: 700;
+}
+
+html {
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    background-color: var(--bg2);
+}
+
+p {
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+svg {
+    transition: .3s all ease;
+}
+
+figure {
+    margin: 0;
+}
+
+._toggler {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: transparent;
+}
+
+/*-----------------------------------
+Home Finder Websites Header nav start
+-------------------------------------*/
+._home_finder_header_wrapper {
+    background-color: var(--bg2);
+}
+
+._home_finder_header_nav_wrapper {
+    padding: 20px 0;
+}
+
+._home_finder_header_nav_wrapper_list {
+    margin: 0 auto;
+    gap: 47px;
+}
+._home_finder_header_nav_wrapper_item_link {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color3) !important;
+    position: relative;
+    transition: .2s all ease;
+}
+
+._home_finder_header_nav_wrapper_item_link::before {
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    border: 1px solid var(--color4);
+    background-color: var(--bg1);
+    transition: .2s all ease;
+    visibility: hidden;
+}
+
+._home_finder_header_nav_wrapper_item_link:hover::before {
+    visibility: visible;
+}
+._nav_wrapper_item_active_link{
+    position: relative;
+    transition: .2s all ease;
+}
+._nav_wrapper_item_active_link::before{
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    border: 1px solid var(--color4);
+    background-color: var(--bg1);
+    visibility: visible;
+}
+._home_finder_header_nav_btn_link {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color4);
+    padding: 0 28px;
+    height: 42px;
+    background-color: var(--bg1) !important;
+    border: 1px solid var(--color4) !important;
+    transition: .2s all ease-in-out;
+    box-shadow: 4px 4px 0 var(--color2);
+}
+
+._home_finder_header_nav_btn_link:hover {
+    box-shadow: none;
+}
+
+/*-------------------------------------------
+Home Finder Websites Header herosection start
+---------------------------------------------*/
+._home_finder_hero_wrap {
+    padding: 90px 0 190px;
+}
+
+._home_finder_header_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 1.2;
+    color: var(--color4);
+    max-width: 86%;
+    margin: 0 0 40px;
+}
+
+._home_finder_header_title_span {
+    color: var(--color5);
+}
+
+._home_finder_header_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 72%;
+}
+
+._home_finder_hero_top_para_cont {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin: 0 0 70px;
+}
+
+._home_finder_hero_scroll_btn {
+    border: 0;
+}
+
+._home_finder_hero_slider_wrap {
+    position: relative;
+}
+._home_finder_hero_slider .splide__pagination {
+    position: absolute;
+    bottom: -98px;
+    right: 0;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    counter-reset: pagination-num;
+}
+
+._home_finder_hero_slider .splide__pagination__page {
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--color4);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+._home_finder_hero_slider .splide__pagination__page.is-active {
+    background-color: var(--bg1);
+}
+
+._home_finder_hero_slider .splide__pagination__page:before {
+    counter-increment: pagination-num;
+    content: counter(pagination-num);
+}
+/*----------------------------------
+Home Finder Websites Feature 1 start
+-------------------------------------*/
+._home_finder_feature_1_wrapper {
+    background-color: var(--bg2);
+}
+
+._home_finder_feature_1_left_cont {
+    padding: 55px;
+    background-color: var(--bg3);
+    border: 1px solid var(--color4);
+    margin: 0 -24px 0 0;
+    height: 100%;
+}
+
+._home_finder_feature_1_left_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--color4);
+    max-width: 86%;
+    margin: 0 0 20px;
+}
+
+._home_finder_feature_1_left_title_span {
+    color: var(--color5);
+}
+
+._home_finder_feature_1_left_para_1 {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 87%;
+    margin: 0 0 16px;
+}
+
+._home_finder_feature_1_left_para_2 {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 100%;
+    margin: 0 0 46px;
+}
+
+._home_finder_feature_1_left_btn_link {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color4);
+    background-color: var(--bg1) !important;
+    border: 1px solid var(--color4) !important;
+    padding: 0 35px;
+    height: 62px;
+    box-shadow: 4px 4px 0 var(--color2);
+    transition: .2s all ease-in-out;
+}
+
+._home_finder_feature_1_left_btn_link:hover {
+    box-shadow: none;
+}
+
+._home_finder_feature_1_right_cont {
+    background-color: var(--bg4);
+    border: 1px solid var(--color4);
+    padding: 55px;
+    height: 100%;
+}
+._home_finder_feature_1_last_card {
+    margin: 0 0 32px;
+}
+
+._home_finder_feature_1_right_card_bg_img {
+    margin: 0 0 18px;
+}
+._home_finder_feature_1_right_para {
+    font-family: 'Neue Montreal';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color1);
+    max-width: 80%;
+    margin: 0 0 0 16px;
+}
+/*-----------------------------------
+Home Finder Websites Features 1 start
+-------------------------------------*/
+._home_finder_features_1_wrapper {
+    padding: 150px 0 70px;
+    background-color: var(--color1);
+}
+
+._home_finder_features_1_top_cont {
+    margin: 0 0 70px;
+}
+
+._home_finder_feature_1_top_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    max-width: 54%;
+    margin: 0 auto;
+}
+
+._home_finder_feature_1_top_title_span {
+    color: var(--color5);
+}
+
+._home_finder_features_1_card {
+    padding: 50px 20px;
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
+._home_finder_features_1_card_details {
+    margin: 38px 0 0;
+}
+
+._home_finder_features_1_card_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 0 20px;
+}
+
+._home_finder_features_1_card_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color3);
+    max-width: 88%;
+    margin: 0 auto 38px;
+}
+
+._home_finder_features_1_card_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._home_finder_features_1_card_btn_link {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color4);
+    padding: 0 35px;
+    height: 58px;
+    background-color: var(--bg1);
+    border: 1px solid var(--color4);
+    transition: .2s all ease-in-out;
+}
+
+._home_finder_features_1_card_btn_link:hover {
+    box-shadow: none;
+}
+
+._home_finder_features_1_card_btn_link_1 {
+    box-shadow: 4px 0 0 var(--color2);
+}
+
+._home_finder_features_1_card_btn_link_2 {
+    box-shadow: 4px 4px 0 var(--color2);
+}
+._home_finder_feature_1_right_card_img {
+    margin: 0 auto;
+}
+/*-----------------------------
+Home Finder Websites Offer start
+--------------------------------*/
+._home_finder_offer_marquee_wrapper {
+    background-color: var(--color4);
+    padding: 52px 0 42px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+._home_finder_offer_marquee_item_list {
+   display: flex;
+   align-items: center;
+   animation: offerAnim 30s linear infinite;
+   
+}
+@keyframes offerAnim {
+    0% {
+        transform: translate(130%, 0);
+    }
+
+    100% {
+        transform: translate(-200%, 0);
+    }
+}
+._home_finder_offer_marquee_item {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+    margin:0  38px 0;
+}
+/*----------------------------------
+Home Finder Websites Features 2 start
+-------------------------------------*/
+._home_finder_features_2_wrapper {
+    background-color: var(--bg2);
+    margin: 250px 0 150px;  
+}
+
+._home_finder_features_2_left_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--color4);
+    max-width: 83%;
+    margin: 0 0 20px;
+}
+
+._home_finder_features_2_title_span {
+    color: var(--color5);
+}
+
+._home_finder_features_2_left_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color3);
+    margin: 0 0 40px;
+    max-width: 72%;
+}
+
+._home_finder_features_2_left_btn_link {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    padding: 0 35px;
+    height: 58px;
+    background-color: var(--bg1);
+    border: 1px solid var(--color4);
+    transition: .2s all ease-in-out;
+    box-shadow: 4px 4px 0 var(--color2);
+}
+
+._home_finder_features_2_left_btn_link:hover {
+    box-shadow: none;
+}
+
+._home_finder_features_2_right_cont {
+    position: relative;
+}
+
+._home_finder_features_2_right_bg_img_1 {
+    position: absolute;
+    top: -170px;
+    left: 60px;
+}
+
+._home_finder_features_2_right_img {
+    max-width: 370px;
+    margin: 0 0 0 auto;
+}
+
+._home_finder_features_2_right_card {
+    padding: 12px 20px;
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+._card_1 {
+    position: absolute;
+    width: 156px;
+    top: -106px;
+    left: 0;
+}
+
+._card_2 {
+    position: absolute;
+    width: 124px;
+    top: -106px;
+    right: 40px;
+}
+
+._card_3 {
+    position: absolute;
+    width: 137px;
+    bottom: 62px;
+    left: 95px;
+}
+
+._card_4 {
+    position: absolute;
+    width: 198px;
+    padding: 12px 18px;
+    bottom: 20px;
+    right: 20px;
+}
+
+._home_finder_features_2_right_card_1_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color4);
+}
+._home_finder_features_2_left_cont {
+    margin: 0 0 60px;
+}
+/*----------------------------------
+Home Finder Websites Features 3 start
+-------------------------------------*/
+._home_finder_features_3_wrapper {
+    margin: 0 0 150px;
+}
+
+._home_finder_features_3_left_cont {
+    padding: 0 40px 0 0;
+}
+
+._home_finder_features_3_right_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--color4);
+    max-width: 90%;
+    margin: 0 0 20px;
+}
+
+._home_finder_features_3_right_title_span {
+    color: var(--color5);
+}
+
+._home_finder_features_3_right_txt {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 90%;
+    margin: 0 0 28px;
+}
+
+._home_finder_features_3_list_ul {
+    margin: 0 0 40px;
+}
+
+._home_finder_features_3_list_item {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 0 0 12px;
+}
+
+._home_finder_features_3_list_item_span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._home_finder_features_3_btn_link {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    padding: 0 35px;
+    height: 58px;
+    background-color: var(--bg1);
+    border: 1px solid var(--color4);
+    transition: .2s all ease-in-out;
+    box-shadow: 4px 4px 0 var(--color2);
+}
+
+._home_finder_features_3_btn_link:hover {
+    box-shadow: none;
+}
+._home_finder_features_3_right_cont {
+    padding: 0 0 0 90px;
+}
+/*----------------------------------
+Home Finder Websites Features 4 start
+-------------------------------------*/
+._home_finder_features_4_wrapper {
+    margin: 0 0 150px;
+}
+
+._home_finder_features_4_top_cont {
+    margin: 0 0 70px;
+}
+
+._home_finder_features_4_top_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    max-width: 100%;
+    margin: 0 0 20px;
+}
+
+._home_finder_features_4_top_title_span {
+    color: var(--color5);
+}
+
+._home_finder_features_4_top_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color3);
+    max-width: 37%;
+    margin: 0 auto;
+}
+
+._home_finder_features_4_card {
+    padding: 40px 20px;
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
+    display: flex;
+    gap: 16px;
+    height: calc(100% - 30px);
+    margin: 0 0 30px;
+}
+
+._home_finder_features_4_card_no {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._card_no_1 {
+    background-color: var(--bg1);
+}
+
+._card_no_2 {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+._card_no_3 {
+    background-color: var(--bg3);
+}
+
+._card_no_4 {
+    background-color: var(--bg5);
+}
+
+._card_no_5 {
+    background-color: var(--bg6);
+}
+
+._card_no_6 {
+    background-color: var(--bg7);
+}
+
+._home_finder_features_4_card_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color4);
+    margin: 0 0 12px;
+}
+
+._home_finder_features_4_card_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 86%;
+}
+/*----------------------------------
+Home Finder Websites Testimonial start
+-------------------------------------*/
+._home_finder_testimonial_wrapper {
+    padding: 150px 0 150px;
+    background-color: var(--color1);
+}
+
+._home_finder_testimonial_cont{
+    position: relative;
+}
+
+._home_finder_testimonial_left_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--color4);
+    max-width: 95%;
+    margin: 0 0 20px;
+}
+
+._home_finder_testimonial_left_title_span {
+    color: var(--color5);
+}
+
+._home_finder_testimonial_left_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 75%;
+    margin: 0 0 40px;
+}
+
+._home_finder_testimonial_right_cont {
+    position: relative;
+}
+
+._home_finder_testimonial_right_bg_img {
+    margin: 0 0 28px;
+}
+
+._home_finder_testimonial_right_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color4);
+    margin: 0 0 18px;
+}
+
+._home_finder_testimonial_right_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width:88%;
+}
+._home_finder_testimonial_right_img {
+    max-width: 470px;
+    margin: 0 auto;
+}
+._home_finder_testimonial_details {
+    padding: 0 0 0 85px;
+}
+._home_finder_testimonial_video_img_btn_cont {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+._home_finder_testimonial_video_img_btn {
+    border: 0;
+}
+
+._home_finder_testimonial_video_img_btn_link {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--bg1);
+    border: 1px solid var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._home_finder_testimonial_slider_arrows {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 265px;
+    left:0px;
+    gap: 208px;
+}
+
+._prev_btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--color4);
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._prev_btn:hover,
+._next_btn:hover {
+    background-color: var(--bg1);
+}
+
+._next_btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--color4);
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._home_finder_testimonial_slider .splide__pagination{
+    position: absolute;
+    top: 277px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+._home_finder_testimonial_slider .splide__pagination__page{
+    width: 24px;
+    height: 6px;
+    border: 1px solid var(--color4);
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+._home_finder_testimonial_slider .splide__pagination__page.is-active {
+    background-color: var(--bg1);
+}
+
+
+/*------------------------------
+Home Finder Websites CTA start
+--------------------------------*/
+._home_finder_CTA_wrapper {
+    background-color: var(--bg3);
+    padding: 100px 0;
+}
+
+._home_finder_CTA_title {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color4);
+    max-width: 56%;
+    margin: 0 auto 20px
+}
+
+._home_finder_CTA_title_span {
+    color: var(--color5);
+}
+
+._home_finder_CTA_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color4);
+    max-width: 42%;
+    margin: 0 auto 40px;
+}
+
+._home_finder_CTA_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 59px;
+}
+
+._home_finder_CTA_btn_link {
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color4);
+    padding: 0 35px;
+    height: 58px;
+    background-color: var(--bg1);
+    border: 1px solid var(--color4);
+    transition: .2s all ease-in-out;
+    box-shadow: 4px 4px 0 var(--color2);
+}
+
+._home_finder_CTA_btn_link:hover {
+    box-shadow: none;
+}
+
+/*------------------------------
+Home Finder Websites footer start
+--------------------------------*/
+._home_finder_footer_wrapper {
+    padding: 90px 0 0;
+}
+
+._home_finder_footer_top_cont {
+    padding: 0 0 38px;
+}
+
+._home_finder_footer_left_para {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 53%;
+    margin: 18px 0 24px;
+}
+._home_finder_footer_social_link_ul {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+._home_finder_footer_social_link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color4) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._home_finder_footer_social_link:hover {
+    background-color: var(--bg1) !important;
+}
+
+._home_finder_footer_social_link_span svg path {
+    transition: .2s all ease;
+}
+
+._home_finder_footer_social_link:hover ._home_finder_footer_social_link_span svg path {
+    fill: var(--color4);
+}
+
+._home_finder_footer_fb_link {
+    background-color: var(--bg1) !important;
+}
+
+._banking_website_footer_menu_head {
+    font-family: 'Neue Montreal';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--color4);
+    margin: 0 0 24px;
+}
+
+._home_finder_footer_menu_list_item {
+    margin: 0 0 18px;
+}
+
+._home_finder_footer_menu_list_item_link {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3) !important;
+    transition: .2s all ease;
+}
+
+._home_finder_footer_menu_list_item_link:hover {
+    color: var(--color4) !important;
+}
+
+._home_finder_footer_btm_cont {
+    border-top: 1px solid var(--bg8);
+    padding: 28px 0;
+}
+
+._home_finder_footer_btm_title {
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+}
+
+/* responsive */
+@media (max-width:1399px){
+    ._home_finder_header_para {
+        max-width: 80%;
+    }
+    ._home_finder_feature_1_left_title {
+        max-width: 98%;
+    }
+    ._home_finder_feature_1_left_para_1 {
+        max-width: 100%;
+    }
+    ._home_finder_feature_1_right_para {
+        max-width: 93%;
+        margin:0;
+    }
+    ._home_finder_feature_1_top_title {
+        max-width: 60%;
+    }
+    ._home_finder_features_2_left_para {
+        max-width: 84%;
+    }
+    /* ._home_finder_features_3_right_title {
+        max-width: 82%;
+    } */
+    ._home_finder_features_3_right_txt {
+        font-size: 17px;
+        max-width: 100%;
+    }
+    ._home_finder_features_4_top_para {
+        max-width: 43%;
+    }
+    ._home_finder_features_4_card_para {
+        max-width: 100%;
+    }
+    ._home_finder_testimonial_left_title {
+        font-size: 45px;
+        max-width: 100%;
+    }
+    ._home_finder_testimonial_left_para {
+        font-size: 17px;
+        max-width: 88%;
+    }
+    ._home_finder_testimonial_right_para {
+        font-size: 17px;
+        max-width: 87%;
+    }
+    ._home_finder_testimonial_details {
+        padding: 0 0 0 35px;
+    }
+    ._home_finder_CTA_para {
+        max-width: 50%;
+    }
+    ._home_finder_footer_left_para {
+        max-width: 60%;
+    }
+}
+@media (max-width:1199px){
+    ._home_finder_header_title {
+        font-size:83px;
+    }
+    ._home_finder_feature_1_left_title {
+        font-size: 35px;
+        max-width: 100%;
+    }
+    ._home_finder_feature_1_left_para_1 {
+        font-size: 16px;
+    }
+    ._home_finder_feature_1_left_para_2 {
+        font-size: 16px;
+    }
+    ._home_finder_feature_1_right_para {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    ._home_finder_features_1_wrapper {
+        padding: 100px 0 70px;
+    }
+    ._home_finder_feature_1_top_title {
+        font-size: 35px;
+    }
+    ._home_finder_features_1_top_cont {
+        margin: 0 0 45px;
+    }
+    ._home_finder_features_2_left_title {
+        font-size: 35px;
+        max-width: 78%;
+    }
+    ._home_finder_features_2_left_para {
+        max-width: 100%;
+    }
+    ._home_finder_features_2_right_bg_img_1 {
+        top: -145px;
+        left: -27px;
+    }
+    ._home_finder_features_2_left_para {
+        max-width: 78%;
+    }
+    ._card_2 {
+        right: -22px;
+    }
+    ._card_3 {
+        position: absolute;
+        width: 137px;
+        bottom: 62px;
+        left: -60px;
+    }
+    ._home_finder_features_2_wrapper {
+        margin: 250px 0 100px;
+    }
+    ._home_finder_features_3_right_title {
+        font-size: 35px;
+        max-width: 100%;
+    }
+    ._home_finder_features_3_wrapper {
+        margin: 0 0 100px;
+    }
+    ._home_finder_features_4_top_title {
+        font-size: 35px;
+        margin: 0 0 12px;
+    }
+    ._home_finder_features_4_card_para {
+        font-size: 14px;
+    }
+    ._home_finder_features_4_card_title {
+        font-size: 20px;
+        margin: 0 0 6px;
+    }
+    ._home_finder_features_4_wrapper {
+        margin: 0 0 80px;
+    }
+    ._home_finder_features_4_top_para {
+        max-width: 100%;
+    }
+    ._home_finder_testimonial_wrapper {
+        padding: 80px 0;
+    }
+    ._home_finder_testimonial_left_title {
+        font-size: 35px;
+        max-width: 90%;
+    }
+    ._home_finder_testimonial_left_para {
+        max-width: 79%;
+    }
+    ._home_finder_testimonial_video_img_btn_cont {
+        top: 27%;
+    }
+    ._home_finder_testimonial_right_para {
+        font-size: 16px;
+    }
+    ._home_finder_CTA_title {
+        font-size: 35px;
+    }
+    ._home_finder_CTA_wrapper {
+        padding: 60px 0;
+    }
+    ._home_finder_footer_menu_list_item_link {
+        font-size: 15px;
+    }
+    ._home_finder_testimonial_details {
+        padding: 0;
+    }
+}
+@media (max-width:991px){
+    ._home_finder_header_nav_wrapper_list {
+        gap:15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ._home_finder_header_nav_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 0;
+    }
+    ._home_finder_hero_wrap {
+        padding: 60px 0 190px;
+    }
+    ._home_finder_header_title {
+        font-size: 55px;
+        max-width: 100%;
+    }
+    ._home_finder_header_para {
+        max-width: 100%;
+    }
+    ._home_finder_feature_1_left_cont {
+        height: calc(100% - 30px);
+        margin: 0 0 30px;
+    }
+    ._home_finder_feature_1_right_para {
+        font-size: 15px;
+        text-align: center;
+    }
+    ._home_finder_feature_1_top_title {
+        max-width: 100%;
+    }
+    ._home_finder_features_1_card_title {
+        font-size: 24px;
+        margin: 0 0 12px;
+    }
+    ._home_finder_features_1_card_para {
+        font-size: 15px;
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+    ._home_finder_features_1_card_img {
+        max-width: 100px;
+    }
+    ._home_finder_features_2_wrapper {
+        margin: 100px 0 120px;
+    }
+    ._home_finder_features_2_left_cont {
+        margin: 0 0 200px;
+    }
+    ._home_finder_features_2_left_title {
+        max-width: 100%;
+    }
+    ._home_finder_features_2_left_para {
+        max-width: 100%;
+    }
+    ._home_finder_features_2_right_img {
+        margin: 0 auto;
+    }
+    ._card_4 {
+        right: 180px;
+    }
+    ._card_3 {
+        left: 0px;
+    }
+    ._card_2 {
+        right: 200px;
+    }
+    ._home_finder_features_3_left_cont {
+        padding: 0 0 40px 0;
+    }
+    ._home_finder_features_3_right_cont {
+        padding: 0;
+    }
+    ._home_finder_features_3_right_txt {
+        max-width: 100%;
+    }
+    ._home_finder_testimonial_left_para {
+        max-width: 100%;
+    }
+    ._home_finder_testimonial_right_img {
+        margin: 0;
+    }
+    ._home_finder_testimonial_video_img_btn_cont {
+        top: 30%;
+        left: 33%;
+    }
+    ._home_finder_testimonial_right_para {
+        max-width: 100%;
+    }
+    ._home_finder_testimonial_left_cont {
+        margin: 0 0 120px;
+    }
+    ._home_finder_testimonial_slider_arrows {
+        top: 140px;
+    }
+    ._home_finder_testimonial_slider .splide__pagination {
+        top: 156px;
+    }
+    ._home_finder_CTA_para {
+        max-width: 100%;
+    }
+    ._home_finder_footer_left_cont {
+        margin: 0 0 60px;
+    }
+    ._home_finder_footer_wrapper {
+        padding: 50px 0 0;
+    }
+    ._home_finder_footer_top_cont {
+        padding: 0 0 10px;
+    }
+}
+@media (max-width:767px){
+    ._home_finder_hero_wrap {
+        padding: 30px 0 190px;
+    }
+    ._home_finder_header_title {
+        font-size: 40px;
+        margin: 0 0 30px;
+        text-align: center;
+    }
+    ._home_finder_header_para {
+        max-width: 100%;
+    }
+    ._home_finder_hero_top_para_cont {
+        margin: 0 0 50px;
+    }
+    ._home_finder_hero_slider .splide__pagination {
+        right: 80px;
+    }
+    ._home_finder_feature_1_left_title {
+        font-size: 26px;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+    ._home_finder_feature_1_left_para_1 {
+        font-size: 15px;
+        text-align: center;
+    }
+    ._home_finder_feature_1_left_para_2 {
+        font-size: 15px;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+    ._home_finder_feature_1_right_card {
+        margin: 0 0 20px;
+    }
+    ._home_finder_feature_1_left_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ._home_finder_feature_1_left_cont {
+        padding: 30px;
+    }
+    ._home_finder_features_1_wrapper {
+        padding: 80px 0 70px;
+    }
+    ._home_finder_feature_1_top_title {
+        font-size: 27px;
+    }
+    ._home_finder_features_1_card {
+        height: calc(100% - 30px);
+        margin: 0 0 30px;
+    }
+    ._home_finder_features_2_wrapper {
+        margin: 70px 0 120px;
+    }
+    ._home_finder_features_2_left_title {
+        font-size: 26px;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+    ._home_finder_features_2_left_para {
+        text-align: center;
+    }
+    ._home_finder_features_2_left_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ._home_finder_features_2_right_img {
+        margin: 0 0 0 auto;
+    }
+    ._card_2 {
+        right: 9px;
+    }
+    ._card_4 {
+        right: 20px;
+    }
+    ._home_finder_features_3_right_title {
+        font-size: 27px;
+        text-align: center;
+        margin: 0 0 12px;
+    }
+    ._home_finder_features_3_right_txt {
+        font-size: 16px;
+        text-align: center;
+    }
+    ._home_finder_features_3_right_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ._home_finder_features_4_top_cont {
+        margin: 0 0 40px;
+    }
+    ._home_finder_features_4_top_title {
+        font-size: 27px;
+        margin: 0 0 12px;
+    }
+    ._home_finder_features_4_top_para {
+        font-size: 16px;
+    }
+    ._home_finder_features_4_wrapper {
+        margin: 0 0 50px;
+    }
+    ._home_finder_testimonial_wrapper {
+        padding: 50px 0;
+    }
+    ._home_finder_testimonial_left_title {
+        font-size: 27px;
+        max-width: 100%;
+        text-align: center;
+    }
+    ._home_finder_testimonial_left_para {
+        max-width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    ._home_finder_testimonial_video_img_btn_cont {
+        left: 48%;
+        top:34%;
+    }
+    ._home_finder_testimonial_right_para {
+        text-align: center;
+        font-size: 15px;
+    }
+    ._home_finder_testimonial_right_title {
+        font-size: 20px;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+    ._home_finder_testimonial_right_img {
+        margin: 0 auto;
+    }
+    ._home_finder_testimonial_slider_arrows {
+        left: 90px;
+    }
+    ._home_finder_testimonial_slider .splide__pagination {
+        left: 187px;
+    }
+    ._home_finder_CTA_title {
+        font-size:27px;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto 12px;
+    }
+    ._home_finder_CTA_para {
+        font-size: 15px;
+        margin: 0 auto 20px;
+    }
+    ._home_finder_CTA_wrapper {
+        padding: 40px 0;
+    }
+    ._home_finder_offer_marquee_item {
+        font-size: 17px;
+        margin: 0 30px 0;
+    }
+    ._banking_website_footer_menu_head {
+        font-size: 20px;
+        margin: 0 0 12px;
+    }
+    ._home_finder_footer_menu_list_item {
+        margin: 0 0 10px;
+    }
+    ._home_finder_footer_menu_list {
+        margin: 0 0 30px;
+    }
+    ._footer_menu_list_last_item{
+        margin:0;
+    }
+    ._home_finder_footer_btm_cont {
+        padding: 18px 0;
+    }
+    ._home_finder_footer_left_para {
+        max-width: 100%;
+    }
+}
+@media (max-width:575px){
+    ._home_finder_header_title {
+        font-size: 35px;
+        margin: 0 0 20px;
+    }
+    ._home_finder_header_para {
+        font-size: 16px;
+    }
+    ._home_finder_feature_1_left_btn_link {
+        font-size: 16px;
+        padding: 0 25px;
+        height: 55px;
+    }
+    ._home_finder_features_1_card {
+        padding: 20px 20px;
+    }
+    ._home_finder_features_1_card_btn_link {
+        font-size: 15px;
+        padding: 0 25px;
+        height: 55px;
+    }
+    ._home_finder_features_1_card_title {
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    ._home_finder_features_1_wrapper {
+        padding: 80px 0 40px;
+    }
+    ._home_finder_features_2_left_para {
+        margin: 0 0 20px;
+        font-size: 15px;
+    }
+    ._home_finder_features_2_left_btn_link {
+        font-size: 15px;
+        padding: 0 25px;
+        height: 50px;
+    }
+    ._home_finder_features_3_btn_link {
+        font-size: 15px;
+        padding: 0 25px;
+        height: 50px;
+    }
+    ._home_finder_features_3_list_ul {
+        margin: 0 0 20px;
+    }
+    ._home_finder_features_3_wrapper {
+        margin: 0 0 70px;
+    }
+    ._home_finder_features_4_top_cont {
+        margin: 0 0 20px;
+    }
+    ._home_finder_features_4_card {
+        padding: 20px 20px;
+    }
+    ._home_finder_features_4_card_title {
+        font-size: 18px;
+    }
+    ._home_finder_features_4_wrapper {
+        margin: 0 0 20px;
+    }
+    ._home_finder_testimonial_video_img_btn_cont {
+        left: 52%;
+    }
+    ._home_finder_testimonial_slider_arrows {
+        left: 115px;
+    }
+    ._home_finder_testimonial_slider .splide__pagination {
+        left: 220px;
+    }
+    ._home_finder_CTA_btn_link {
+        font-size: 15px;
+        padding: 0 25px;
+        height: 50px;
+    }
+    ._home_finder_footer_left_cont {
+        margin: 0 0 40px;
+    }
+    ._home_finder_footer_btm_title {
+        font-size: 15px;
+    }
+}
+@media (max-width:420px){
+    ._home_finder_hero_wrap {
+        padding: 30px 0 130px;
+    }
+    ._home_finder_header_title {
+        font-size: 35px;
+        margin: 0 0 12px;
+    }
+    ._home_finder_header_para {
+        text-align: center;
+    }
+    ._home_finder_hero_top_para_cont {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    ._home_finder_hero_slider .splide__pagination__page {
+        width: 44px;
+        height: 44px;
+    }
+    ._home_finder_hero_slider .splide__pagination {
+        right: 54px;
+        bottom: -75px;
+    }
+    ._home_finder_feature_1_right_cont {
+        padding: 30px;
+    }
+    ._home_finder_features_1_wrapper {
+        padding: 60px 0 20px;
+    }
+    ._home_finder_feature_1_top_title {
+        font-size: 25px;
+    }
+    ._home_finder_features_1_top_cont {
+        margin: 0 0 30px;
+    }
+    ._home_finder_features_1_card_details {
+        margin: 20px 0 0;
+    }
+    ._home_finder_features_2_wrapper {
+        margin: 50px 0 60px;
+    }
+    ._home_finder_features_2_right_img {
+        max-width: 250px;
+    }
+    ._home_finder_features_2_right_bg_img_1 {
+        top: -145px;
+        left: 0px;
+    }
+    ._home_finder_features_3_left_cont {
+        padding: 0 0 20px 0;
+    }
+    ._home_finder_features_3_right_title {
+        font-size: 23px;
+        margin: 0 0 9px;
+    }
+    ._home_finder_features_3_right_txt {
+        margin: 0 0 20px;
+    }
+    ._home_finder_features_3_list_item {
+        font-size: 15px;
+    }
+    ._home_finder_testimonial_wrapper {
+        padding: 30px 0 40px;
+    }
+    ._home_finder_testimonial_slider_arrows {
+        left: 30px;
+    }
+    ._home_finder_testimonial_slider .splide__pagination {
+        left: 135px;
+    }
+    ._home_finder_CTA_title {
+        font-size: 25px;
+    }
+    ._home_finder_CTA_wrapper {
+        padding: 30px 0;
+    }
+}
+@media (max-width:375px){
+    ._home_finder_hero_slider .splide__pagination {
+        right: 48px;
+        gap: 12px;
+    }
+    ._card_3 {
+        bottom: 80px;
+    }
+    ._home_finder_testimonial_slider_arrows {
+        top: 171px;
+    }
+    ._home_finder_testimonial_slider .splide__pagination {
+        top: 184px;
+    }
+}
+/* variable */
+:root {
+    --color1: #FFFFFF;
+    --color2: #000000;
+    --color3: #5D5A68;
+    --color4: #0C071C;
+    --color5: #6637EE;
+
+    --bg1: #CEFF1A;
+    --bg2: #FFFAE9;
+    --bg3: #4ADBC8;
+    --bg4: #6637EE;
+    --bg5: #FF9431;
+    --bg6: #F2A3D8;
+    --bg7: #FFDA58;
+    --bg8: #DED2A8;
+}
